@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:classes="classes.*"
+	verticalGap="0">
+	<fx:Script>
+		<![CDATA[
+			private var arr:Array = [
+				{ firstName: "Alex", lastName: "Harui" },
+				{ firstName: "Gordon", lastName: "Smith" },
+				{ firstName: "Deepa", lastName: "Subramanian" },
+				{ firstName: "Matt", lastName: "Chotin" },
+				{ firstName: "Ely", lastName: "Greenfield" },
+				{ firstName: "Kevin", lastName: "Lynch" },
+				{ firstName: "Shantanu", lastName: "Narayan" },
+				{ firstName: "Joan", lastName: "Lafferty" },
+				{ firstName: "Ryan", lastName: "Frishberg" },
+				{ firstName: "Jason", lastName: "Szeto" },
+				{ firstName: "Mark", lastName: "Anders" },
+				{ firstName: "Peter", lastName: "Flynn" },
+				{ firstName: "Heidi", lastName: "Williams" }	
+			];
+		]]>
+	</fx:Script>
+	<classes:SmoothScrollingList id="list" initialize="list.dataProvider=arr">
+		<classes:columns>
+			<mx:DataGridColumn dataField="firstName"/>
+		</classes:columns>
+	</classes:SmoothScrollingList>
+</mx:Application>
